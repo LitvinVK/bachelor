@@ -11,10 +11,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $white;
     background-color: $graybright1;
-    font-family: "Charis SIL";
+    font-family: Roboto;
 }
 
 .wrapper {
@@ -145,6 +149,8 @@ body {
     }
 }
 .content {
+    margin-top: -80px;
+    padding-top: 80px;
 
     &__catalog {
     }
@@ -308,6 +314,10 @@ body {
         align-self: flex-start;
         font-size: 20px;
         font-weight: 600;
+        transition: all 0.5s ease;
+        &.active {
+            color: $orange;
+        }
     }
 }
 
@@ -316,6 +326,7 @@ body {
 .shopping {
 
     &__body {
+        padding: 20px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -339,6 +350,11 @@ body {
         cursor: pointer;
         img {
             height: 32px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+            &:hover {
+                filter: none;
+            }
         }
     }
 
@@ -349,7 +365,8 @@ body {
         padding-right: 5px;
         height: 40px;
         img {
-            width: 50px;
+            max-width: 50px;
+            max-height: 35px;
         }
     }
 
@@ -378,7 +395,6 @@ body {
     &__buy-button {
         display: inline-block;
         margin: 0 auto;
-        margin-bottom: 10px;
         font-size: 28px;
         padding: 5px 15px;
         background-color: $graybright0;

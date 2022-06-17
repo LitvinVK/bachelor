@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/note.png" type="image/png">
+    <link rel="stylesheet" href="css/musician.css">
+    <title>Лейн Стэйли</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <!--@import "../header-man.html"-->
+            <div class="page__musician musician">
+                <div class="musician__photo">
+                    <img src="img/musicians/layne-staley.jpg" alt="">
+                </div>
+                <div class="musician__info">
+                    <div class="musician__name">Лейн Стэйли</div>
+                    <div class="musician__bands">вокалист группы <span>Alice In Chains</span></div>
+                    <div class="musician__wiki">Лейн Томас Стэйли (англ. Layne Thomas Staley; 22 августа 1967,
+                        Белвью, Вашингтон — 5 апреля 2002, Сиэтл, Вашингтон) — американский музыкант, вокалист
+                        группы Alice in Chains. Лейн Стейли начинал музыкальную карьеру в середине
+                        1980-х годов в сиэтлском глэм-роковом коллективе Sleze. В 1988 году он перешёл
+                        в группу Alice in Chains, основанную гитаристом Джерри Кантреллом. В составе
+                        Alice in Chains он записал три полноформатные пластинки, которые принесли группе
+                        всемирную известность. Наибольший резонанс вызвал альбом Dirt, выпущенный в 1992 году.</div>
+                </div>
+            </div>
+            <div class="page__categories categories">
+                <button class="categories__category button category-all button-active" data-filter="all">Все</button>
+                <button class="categories__category button category-guitar" data-filter="guitar">Гитары</button>
+                <button class="categories__category button category-guitar" data-filter="bass">Бас-гитары</button>
+                <button class="categories__category button category-guitar" data-filter="piano">Клавишные</button>
+                <button class="categories__category button category-guitar" data-filter="drums">Барабаны</button>
+                <button class="categories__category button category-amp" data-filter="amp">Усилители</button>
+                <button class="categories__category button category-pedal" data-filter="pedal">Педали эффектов</button>
+                <button class="categories__category button category-accessory" data-filter="accessory">Музыкальные аксессуары</button>
+                <button class="categories__category button category-studio" data-filter="studio">Студийное</button>
+                <button class="categories__category button category-microphon" data-filter="microphon">Микрофоны</button>
+            </div>
+            <div class="page__equipment equipment" id="products-man"></div>
+            <div class="footer-shopping" id="footer-shopping-layne-staley"></div>
+            <div class="shopping" id="shopping-layne-staley"></div>
+            <!--@import "../footer-man.html"-->
+        </div>
+    </div>
+    <script src="js/constants/catalog.js"></script>
+    <script src="js/constants/root.js"></script>
+    <script src="js/utils/local-storage-util.js"></script>
+    <script src="js/man-layne-staley/products-man.js"></script>
+    <script src="js/components/header-entry-man.js"></script>
+    <script src="js/components/entry-man.js"></script>
+    <script src="js/components/header-register-man.js"></script>
+    <script src="js/components/register-man.js"></script>
+    <script src="js/man-layne-staley/categories-man.js"></script>
+    <script type="text/javascript" src="js/scripts/script-more.js"></script>
+    <script src="js/man-layne-staley/shopping-layne-staley.js"></script>
+    <script src="js/man-layne-staley/footer-shopping-layne-staley.js"></script>
+</body>
+
+</html>

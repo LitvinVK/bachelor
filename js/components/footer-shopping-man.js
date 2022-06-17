@@ -7,7 +7,7 @@ class Footer_Shopping {
         const html = `
             <div class="footer-shopping__body" onclick="footer_shoppingPage.handlerOpenShoppingPage();">
                 <div class="footer-shopping__img"><img src="img/footer-shopping/buy.svg" alt=""></div>
-                <div class="footer-shopping__counter">${count}</div>
+                <div class="footer-shopping__counter" id="footer-shopping__counter">${count}</div>
             </div>
         `;
 

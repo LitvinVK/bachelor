@@ -5,8 +5,7 @@ function hoverOnOrange(){
     document.getElementById("text-muz").classList.add("active");
     document.getElementById("text-man").classList.add("active");
     document.getElementById("header__stick").classList.add("active");
-    document.getElementById("products-mus").classList.add("active");
-    document.getElementById("equipment__body").classList.add("active");
+    document.getElementById("footer-shopping__counter").classList.add("active");
 }
 function hoverOffOrange(){
     document.getElementById("welcome__body").classList.remove("active");
@@ -15,8 +14,7 @@ function hoverOffOrange(){
     document.getElementById("text-muz").classList.remove("active");
     document.getElementById("text-man").classList.remove("active");
     document.getElementById("header__stick").classList.remove("active");
-    document.getElementById("products-mus").classList.remove("active");
-    document.getElementById("equipment__body").classList.remove("active");
+    document.getElementById("footer-shopping__counter").classList.remove("active");
 }
 
 document.querySelector('#equipment__body').oninput = function () {

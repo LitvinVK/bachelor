@@ -689,6 +689,18 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -760,6 +772,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer__slogan {
   font-size: 20px;
   line-height: 110%;
+  text-align: center;
+}
+.footer__bottom-text {
+  margin-top: 25px;
+  font-size: 15px;
+  color: rgb(41, 41, 41);
+  line-height: 100%;
   text-align: center;
 }
 
@@ -887,7 +906,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   color: white;
   background-color: rgb(22, 20, 22);
-  font-family: "Charis SIL";
+  font-family: Roboto;
 }
 
 .wrapper {
@@ -1275,6 +1294,7 @@ body {
 
 /* ------------------------------------------------------------------------------------------SHOPPING */
 .shopping__body {
+  padding: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1346,7 +1366,6 @@ body {
 .shopping__buy-button {
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 10px;
   font-size: 28px;
   padding: 5px 15px;
   background-color: rgb(10, 10, 10);

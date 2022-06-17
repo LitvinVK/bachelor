@@ -5,7 +5,8 @@ class Header_Entry {
 
     render() {
         const html = `
-            <div class="header__entry-body" onclick="header_entryPage.handlerOpenEntryPage();">Вход</div>
+            <div class="header__entry-body"
+            onclick="header_entryPage.handlerOpenEntryPage();">Вход</div>
         `;
 
         ROOT_HEADER_ENTRY.innerHTML = html;

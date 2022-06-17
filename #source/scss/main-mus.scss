@@ -11,10 +11,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $white;
     background-color: $graybright1;
-    font-family: "Charis SIL";
+    font-family: Roboto;
 }
 
 .wrapper {
@@ -139,6 +143,11 @@ body {
 
 /* ------------------------------------------------------------------------------------------SEARCH-BOX */
 
+.content {
+    margin-top: -80px;
+    padding-top: 80px;
+}
+
 .search-box {
     margin: 50px 5px;
     display: flex;
@@ -243,6 +252,10 @@ body {
     margin: 15px;
     gap: 20px;
     max-width: 360px;
+    transition: all 0.5s ease;
+    &:hover {
+        box-shadow: 0 0 10px $orange;
+    }
 
     &__container {
         display: flex;
@@ -254,7 +267,9 @@ body {
     }
 
     &__img {
-        width: 320px;
+        padding: 5px;
+        max-width: 310px;
+        max-height: 310px;
     }
 
     &__name {
@@ -326,7 +341,8 @@ body {
         }
 
         &__img {
-            width: 63vw;
+            max-height: 63vw;
+            max-width: 63vw;
         }
 
         &__name {
@@ -365,6 +381,10 @@ body {
         align-self: flex-start;
         font-size: 20px;
         font-weight: 600;
+        transition: all 0.5s ease;
+        &.active {
+            color: $blue;
+        }
     }
 }
 
@@ -373,6 +393,7 @@ body {
 .shopping {
 
     &__body {
+        padding: 20px 0px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -396,6 +417,11 @@ body {
         cursor: pointer;
         img {
             height: 32px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+            &:hover {
+                filter: none;
+            }
         }
     }
 
@@ -406,7 +432,8 @@ body {
         padding-right: 5px;
         height: 40px;
         img {
-            width: 50px;
+            max-width: 50px;
+            max-height: 35px;
         }
     }
 
@@ -435,7 +462,6 @@ body {
     &__buy-button {
         display: inline-block;
         margin: 0 auto;
-        margin-bottom: 10px;
         font-size: 28px;
         padding: 5px 15px;
         background-color: $graybright0;

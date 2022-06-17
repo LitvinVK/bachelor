@@ -13,6 +13,12 @@
 
     &__body {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 5vw;
@@ -55,6 +61,14 @@
     &__slogan {
         font-size: 20px;
         line-height: 110%;
+        text-align: center;
+    }
+
+    &__bottom-text {
+        margin-top: 25px;
+        font-size: 15px;
+        color: $graybright3;
+        line-height: 100%;
         text-align: center;
     }
 }

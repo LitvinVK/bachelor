@@ -34,7 +34,7 @@ class Register_man {
                     </div>
                     <div class="header__register-row">
                         <div class="register-row__text">Город</div>
-                        <input type="password" class="register-row__input">
+                        <input type="text" class="register-row__input">
                     </div>
                     <button class="header__register-button">Зарегистрироваться</button>
                 </div>
