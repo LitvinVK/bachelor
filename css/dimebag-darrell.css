@@ -519,6 +519,44 @@ h1, h2, h3, h4, h5, h6 {
     right: 10%;
   }
 }
+@media (max-width: 800px) {
+  .header__contacts img:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .header__contacts img:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .header__entry-body:hover {
+    color: inherit;
+  }
+  .header__entry-body:active {
+    color: rgb(0, 180, 230);
+  }
+  .header__register-body:hover {
+    color: inherit;
+  }
+  .header__register-body:active {
+    color: rgb(0, 180, 230);
+  }
+  .header__entry-button:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .header__entry-button:active {
+    background-color: rgb(0, 180, 230);
+    color: white;
+  }
+  .header__register-button:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .header__register-button:active {
+    background-color: rgb(0, 180, 230);
+    color: white;
+  }
+}
 @media (max-width: 600px) {
   .header__register-rows {
     padding-top: 8vh;
@@ -881,6 +919,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 800px) {
+  .fb__band a:hover {
+    color: inherit;
+  }
+  .fb__band a:active {
+    color: rgb(0, 180, 230);
+  }
+
   .footer__column33 {
     display: none;
   }

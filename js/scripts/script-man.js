@@ -48,4 +48,4 @@ document.querySelector('#musicians__body').oninput = function () {
             elem.classList.remove('hide-card');
         });
     }
-}
+};

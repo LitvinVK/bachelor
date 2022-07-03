@@ -519,6 +519,44 @@ h1, h2, h3, h4, h5, h6 {
     right: 10%;
   }
 }
+@media (max-width: 800px) {
+  .header__contacts img:hover {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  .header__contacts img:active {
+    -webkit-filter: none;
+            filter: none;
+  }
+  .header__entry-body:hover {
+    color: inherit;
+  }
+  .header__entry-body:active {
+    color: rgb(253, 117, 27);
+  }
+  .header__register-body:hover {
+    color: inherit;
+  }
+  .header__register-body:active {
+    color: rgb(253, 117, 27);
+  }
+  .header__entry-button:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .header__entry-button:active {
+    background-color: rgb(253, 117, 27);
+    color: white;
+  }
+  .header__register-button:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .header__register-button:active {
+    background-color: rgb(253, 117, 27);
+    color: white;
+  }
+}
 @media (max-width: 600px) {
   .header__register-rows {
     padding-top: 8vh;
@@ -881,6 +919,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 800px) {
+  .fb__band a:hover {
+    color: inherit;
+  }
+  .fb__band a:active {
+    color: rgb(253, 117, 27);
+  }
+
   .footer__column33 {
     display: none;
   }
@@ -1027,12 +1072,12 @@ body {
   margin: 0px 15px;
   margin-bottom: 30px;
   padding: 10px;
+  background-color: rgba(253, 117, 27, 0.05);
   border: 5px solid rgb(253, 117, 27);
   border-radius: 10px;
   font-size: 35px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: rgba(253, 117, 27, 0.05);
 }
 .welcome__button:hover {
   background-color: rgba(0, 180, 230, 0.05);
@@ -1254,9 +1299,9 @@ body {
 .product__button {
   font-size: 20px;
   text-align: center;
-  color: rgb(253, 117, 27);
   padding: 10px 15px;
   background-color: rgb(10, 10, 10);
+  color: rgb(253, 117, 27);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   font-family: serif;
@@ -1429,6 +1474,24 @@ body {
 @media (max-width: 800px) {
   .shopping__body {
     padding-top: 40px;
+  }
+
+  .product:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .product:active {
+    -webkit-box-shadow: 0 0 10px rgb(253, 117, 27);
+            box-shadow: 0 0 10px rgb(253, 117, 27);
+  }
+
+  .welcome__button:hover {
+    background-color: rgba(253, 117, 27, 0.05);
+    border: 5px solid rgb(253, 117, 27);
+  }
+  .welcome__button:active {
+    background-color: rgba(0, 180, 230, 0.05);
+    border: 5px solid rgb(0, 180, 230);
   }
 }
 .button-active {

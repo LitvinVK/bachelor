@@ -112,11 +112,11 @@ body {
         margin: 0px 15px;
         margin-bottom: 30px;
         padding: 10px;
+        background-color: $orangebg;
         border: 5px solid $orange;
         border-radius: 10px;
         font-size: 35px;
         transition: all 0.5s ease;
-        background-color: $orangebg;
         &:hover {
             background-color: $bluebg;
             border: 5px solid $blue;
@@ -303,9 +303,9 @@ body {
     &__button {
         font-size: 20px;
         text-align: center;
-        color: $orange;
         padding: 10px 15px;
         background-color: $graybright0;
+        color: $orange;
         transition: all 0.5s ease;
         font-family: serif;
         &:hover {
@@ -480,6 +480,28 @@ body {
         &__body {
             padding-top: 40px;
         }
+    }
+    .product {
+        &:hover {
+            box-shadow: none;
+        }
+        &:active {
+            box-shadow: 0 0 10px $orange;
+        }
+    }
+    .welcome {
+    
+        &__button {
+            &:hover {
+                background-color: $orangebg;
+                border: 5px solid $orange;
+            }
+            &:active {
+                background-color: $bluebg;
+                border: 5px solid $blue;
+            }
+        }
+    
     }
 }
 

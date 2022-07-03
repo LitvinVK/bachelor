@@ -112,11 +112,11 @@ body {
         margin: 0px 15px;
         margin-bottom: 30px;
         padding: 10px;
+        background-color: $bluebg;
         border: 5px solid $blue;
         border-radius: 10px;
         font-size: 35px;
         transition: all 0.5s ease;
-        background-color: $bluebg;
         &:hover {
             background-color: $orangebg;
             border: 5px solid $orange;
@@ -412,6 +412,49 @@ body {
 
         &__body {
             padding-top: 40px;
+        }
+    }
+    .welcome {
+    
+        &__button {
+            &:hover {
+                background-color: $bluebg;
+                border: 5px solid $blue;
+            }
+            &:active {
+                background-color: $orangebg;
+                border: 5px solid $orange;
+            }
+        }
+    
+    }
+    .musicians {
+    
+        &__body {
+            &:hover {
+                background-color: $graybright1;
+                .musicians__name {
+                    color: $blue;
+                }
+                .musicians__bands {
+                    color: $blue;
+                }
+                .musicians__photo {
+                    filter: grayscale(100%);
+                }
+            }
+            &:active {
+                background-color: $blue;
+                .musicians__name {
+                    color: $white;
+                }
+                .musicians__bands {
+                    color: $white;
+                }
+                .musicians__photo {
+                    filter: none;
+                }
+            }
         }
     }
 }

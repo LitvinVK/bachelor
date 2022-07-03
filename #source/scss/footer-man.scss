@@ -145,6 +145,19 @@
 }
 
 @media (max-width: 800px) {
+    .fb {
+    
+        &__band {
+            a {
+                &:hover{
+                    color: inherit;
+                }
+                &:active{
+                    color: $blue;
+                }
+            }
+        }
+    }
     .footer {
         &__column33 {
             display: none;
